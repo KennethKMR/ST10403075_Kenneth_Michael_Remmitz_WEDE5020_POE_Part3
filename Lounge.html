@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="img/Tranquil-Logo.jpg">
+    <title>Tranquil</title>
+</head>
+<script>
+  const audio = document.getElementById('background-audio');
+  
+  function toggleAudio() {
+    if (audio.paused) {
+      audio.play();
+    } else {
+      audio.pause();
+    }
+  }
+  </script>
+<style>
+    p {
+        text-align: center;
+    }
+</style>
+<link rel="stylesheet" href="styles.css" />
+<body>
+    <header class="main-header">
+    <nav class="nav main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+            <li><a href="Lounge.html">Lounge</a></li>
+            <li><a href="WhatsTrending.html">Whats Trending</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+        </ul>
+    </nav>
+    <h1 class="website-name">Tranquil</h1>
+    <h3 class="webpage-name">Lounge</h3>
+    </header>
+    <main class="content-section container">
+    <p>Enjoy the chill experince</p>
+    <p>Get a snack maybe, or a cup of tea and relax</p>
+    </main>
+    <audio controls autoplay loop>
+      <source src="Audio/rain.mp3.mp3" type="audio/mpeg">
+      <source src="Audio/rain.mp3.ogg" type="audio/ogg">
+    </audio>
+    <button onclick="toggleAudio()">Mute/Unmute</button>
+    <div class="gap5"></div>
+    <footer class="footer">
+        <p>&copy;2023 Tranquil</p>
+        <p>Contact Number: (+27) 58 935 8251</p>
+    </footer>
+</body>
+</html>
